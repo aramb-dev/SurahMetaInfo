@@ -7,7 +7,7 @@
 }
 
 .api-error {
-    width: fit-content
+    width: fit-content;
     padding:20px;
     color: red;
     font-size: .2em;
