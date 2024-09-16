@@ -1,0 +1,13 @@
+.api-response {
+    padding: 20px;
+    color: green;
+    font-size: .2em;
+    border: 1px solid black
+}
+
+.api-error {
+    padding:20px;
+    color: red;
+    font-size: .2em;
+    border: 1px solid black
+}

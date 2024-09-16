@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah Meta Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Surah Meta Info</h1>
+    <button id="getSurahInfo">Call API</button>
+    <p>Visual representation of API response</p>
+    <div id="response">
+        <p id="response-visual">
+        <ul>
+            <li>Ayahs: <span class="ayahs"></span></li>
+            <li>Surahs: <ol class="surahs">
+                <li></li>
+            </ol></li>
+        </ul>
+        </p>
+    </div>
+    <div class="response">API Response:<p class="api-response"></p>
+    </div>
+    <div class="error">API Error:<p class="api-error"></p>
+    </div>
+
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
