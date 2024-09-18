@@ -3,22 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Surah Meta Info</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulma.css">
 </head>
 
 <body>
-    <h1>Surah Meta Info</h1>
-    <button id="getSurahInfo">Call API</button>
+    <h1 class="title has-text-centered p-2">Surah Meta Info</h1>
+    <div class="has-text-centered">
+        <button class="button is-success pr-5 pl-5 is-large" id="getSurahInfo">Call API</button>
+    </div>
     <p>Visual representation of API response</p>
     <div id="response">
         <p id="response-visual">
         <ul>
             <li>Ayahs: <span class="ayahs"></span></li>
-            <li>Surahs: <ol class="surahs">
-                <li></li>
-            </ol></li>
+            <li>Surahs:
+                <ol id="surahs" class="container is-fullwidth grid is-col-min-6">
+
+                </ol>
+            </li>
         </ul>
         </p>
     </div>
@@ -29,8 +34,8 @@
 
 
     <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="axios.min.js"></script>
 
-</body>
+    </body>
 
 </html>
