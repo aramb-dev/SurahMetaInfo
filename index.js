@@ -3,7 +3,7 @@ async function getSurahInfo() {
   try {
     //  add 'is-loading' class to #getSurahInfo
     document.querySelector("#getSurahInfo").classList.add("is-loading");
-    response = await axios.get("https://api.alquran.cloud/v1/meta");
+    response = await axios.get("./meta.json");
     
     response = response.data.data;
     document.querySelector(".api-response").innerText =
